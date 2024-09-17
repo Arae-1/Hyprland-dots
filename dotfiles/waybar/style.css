@@ -1,0 +1,184 @@
+* {
+  font-family: Ubuntu Nerd Font; 
+}
+
+window#waybar {
+  background-color:rgba(0,0,0,0);
+  font-family:Ubuntu Nerd Font;
+  margin-top:10px;
+}
+
+
+tooltip {
+  background-color:#1e1e2e;
+}
+tooltip label {
+  color:#cdd6f4;
+  background-color:#1e1e2e;
+}
+
+
+#powermenu {
+  background-color:#1e1e2e;
+  border:2px solid #f38ba8;
+  border-radius:5em;
+  margin-left:10px;
+  padding-left:3px;
+}
+#lirilei {
+  padding-left:10px;
+  padding-right:10px;
+}
+#custom-powerbutton {
+  color:#f38ba8;
+  padding-left:10px;
+  padding-right:10px;
+}
+#custom-restartbutton {
+  color:#f9e2af;
+  padding-left:10px;
+  padding-right:10px;
+}
+#custom-sleepbutton {
+  color:#a6e3a1;
+  padding-left:10px;
+  padding-right:10px;
+}
+#custom-lockbutton{
+  color:#cba6f7;
+  padding-left:10px;
+  padding-right:10px;
+}
+#custom-exitbutton{
+  color:#eba0ac;
+  padding-left:10px;
+  padding-right:10px;
+}
+#mpris {
+  color:#fab387;
+  border-radius:4em;
+  padding-right:10px;
+  padding-left:10px;
+  border-width:2px;
+  border-style:solid;
+  background: linear-gradient(#1e1e2e,#1e1e2e) padding-box, linear-gradient(135deg, rgba(255,118,164,1) 0%, rgba(192,17,215,1) 100%) border-box;
+  border:2px solid transparent;
+}
+
+
+
+.modules-center {
+/*  background-color:;*/
+  border-radius:4em;
+  padding-right:10px;
+  color:#cdd6f4;
+  border-width:2px;
+  border-style:solid;
+  background: linear-gradient(#1e1e2e,#1e1e2e) padding-box, linear-gradient(135deg, rgba(255,118,164,1) 0%, rgba(192,17,215,1) 100%) border-box;
+  border:2px solid transparent;
+ }
+
+#workspaces button {
+  border-radius:5em;  
+  color:#f9e2af;
+}
+#workspaces button.visible {
+  color:#a6e3a1;
+}
+#workspaces button.active {
+  color:#cba6f7;
+}
+
+#tray {
+  background-color:#1e1e2e;
+  border-radius:5em;
+  padding-right:10px;
+  padding-left:10px;
+  border-width:2px;
+  border-style:solid;
+  background: linear-gradient(#1e1e2e,#1e1e2e) padding-box, linear-gradient(135deg, rgba(255,118,164,1) 0%, rgba(192,17,215,1) 100%) border-box;
+  border:2px solid transparent;
+  color:#cdd6f4;
+}
+
+#net {
+  background-color:#1e1e2e;
+  border-radius:5em;
+  padding-right:10px;
+  padding-left:10px;
+  border-width:2px;
+  border-style:solid;
+  background: linear-gradient(#1e1e2e,#1e1e2e) padding-box, linear-gradient(135deg, rgba(255,118,164,1) 0%, rgba(192,17,215,1) 100%) border-box;
+  border:2px solid transparent;
+}
+
+#bluetooth {
+  color:#89b4fa;
+}
+
+#network {
+  color:#cba6f7;
+}
+
+#batt {
+  background-color:#1e1e2e;
+  border-radius:5em;
+  padding-right:10px;
+  padding-left:10px;
+  border-width:2px;
+  border-style:solid;
+  background: linear-gradient(#1e1e2e,#1e1e2e) padding-box, linear-gradient(135deg, rgba(255,118,164,1) 0%, rgba(192,17,215,1) 100%) border-box;
+  border:2px solid transparent;
+}
+#backlight {
+  color:#f2cdcd;
+}
+#battery {
+  color:#f9e2af;
+}
+#power-profiles-daemon.performance {
+  color:#eba0ac;
+}
+#power-profiles-daemon.balanced {
+  color:#89dceb;
+}
+#power-profiles-daemon.power-saver {
+  color:#a6e3a1;
+}
+
+#wireplumber {
+  background-color:#1e1e2e;
+  border-radius:5em;
+  padding-right:10px;
+  padding-left:10px;
+  border-width:2px;
+  border-style:solid;
+  background: linear-gradient(#1e1e2e,#1e1e2e) padding-box, linear-gradient(135deg, rgba(255,118,164,1) 0%, rgba(192,17,215,1) 100%) border-box;
+  border:2px solid transparent;
+  color:#94e2d5;
+}
+
+#clock {
+  background-color:#1e1e2e;
+  border-radius:5em;
+  padding-right:10px;
+  padding-left:10px;
+  border-width:2px;
+  border-style:solid;
+  background: linear-gradient(#1e1e2e,#1e1e2e) padding-box, linear-gradient(135deg, rgba(255,118,164,1) 0%, rgba(192,17,215,1) 100%) border-box;
+  border:2px solid transparent;
+  color:#f5c2e7;
+ /* margin-right:10px;*/
+}
+
+#custom-nctr {
+  background-color:#1e1e2e;
+  border-radius:5em;
+  padding-right:10px;
+  padding-left:10px;
+  border-width:2px;
+  border-style:solid;
+  background: linear-gradient(#1e1e2e,#1e1e2e) padding-box, linear-gradient(135deg, rgba(255,118,164,1) 0%, rgba(192,17,215,1) 100%) border-box;
+  border:2px solid transparent;
+  color:#74c7ec;
+}

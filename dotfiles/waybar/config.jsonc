@@ -1,0 +1,140 @@
+{
+  "layer":"top",
+  "position":"top",
+  "height":25,
+  "spacing":15,
+  "margin":"10px",
+  "modules-left": ["group/powermenu","mpris"],
+  "modules-center": ["hyprland/workspaces","hyprland/window"],
+  "modules-right": ["tray","group/net","group/batt","wireplumber","clock","custom/nctr"],
+ 
+
+  "group/powermenu": {
+    "orientation":"horizontal",
+    "drawer": {
+      "transition-duration":300,
+      "children-class":"lirilei",
+    },
+    "modules": [
+      "custom/powerbutton",
+      "custom/restartbutton",
+      "custom/sleepbutton",
+      "custom/lockbutton",
+      "custom/exitbutton"
+    ],
+  },
+
+  "custom/powerbutton": {
+    "format":" ",
+    "tooltip-format":"Power",
+    "on-click": "poweroff"
+  },
+    "custom/restartbutton": {
+    "format":" ",
+    "tooltip-format":"Restart",
+    "on-click": "reboot"
+  },
+  "custom/sleepbutton": {
+    "format":"󰤄",
+    "tooltip-format":"Sleep",
+    "on-click": "systemctl suspend"
+  },
+  "custom/lockbutton": {
+    "format":" ",
+    "tooltip-format":"Lock",
+    "on-click": "hyprlock"
+  },
+  "custom/exitbutton": {
+    "format":"󰈆",
+    "tooltip-format":"Exit Hyprland",
+    "on-click": "hyprctl dispatch exit"
+  },
+   "mpris":{
+    "format":"{status_icon}   {title} - {artist}",
+    "status-icons": {
+      "paused": "",
+      "playing": "",
+      "stopped": "",
+    },
+  },
+
+ "hyprland/workspaces":{
+    "format":"{icon}",
+    "format-icons": {
+
+      "empty":"",
+      "active":"",
+      "default":"",
+    },
+   },
+
+  "hyprland/window":{
+    "format":"{class}",
+  },
+
+  "tray":{
+    "icon-size":15,
+    "show-passive-items":true,
+    "spacing":15,
+  },
+ "group/net": {   
+    "orientation":"horizontal",
+    "modules": [
+      "bluetooth",
+      "network"
+    ],
+  },
+  "bluetooth":{
+    
+  },
+  "network":{
+    "format":"{icon}",
+    "format-icons":["     "],
+    "tooltip-format":"{essid}"
+  },
+  "group/batt": {
+    "orientation":"horizontal",
+"modules": [
+      "backlight",
+      "battery",
+      "power-profiles-daemon",
+    ],
+  },
+"backlight":{
+    "on-scroll-up":"brightnessctl -d intel_backlight s +1%",
+    "on-scroll-down":"brightnessctl -d intel_backlight s 1%-",
+    "format":"{icon} {percent}%",
+    "format-icons":["󰃞","󰃝","󰃟","󰃠"],
+  },
+  "battery":{
+    "format":"     {icon} {capacity}%",
+    "format-icons":["","","","",""],
+  },
+  "power-profiles-daemon":{
+    "format-icons":{
+      "power-saver":"     ",
+      "balanced":"     ",
+      "performance":"     ",
+    },
+  },
+  "wireplumber":{
+    "format": "{icon}    {volume}%",
+    "format-muted":" ",
+    "format-icons":["","",""],
+  },
+  "clock":{
+    "format":"{:%F %H:%M}  ",
+    "tooltip-format": "Spain: {tz_list}",
+    "timezones":[
+      "Australia/Brisbane",
+      "Europe/Madrid",
+    ]
+  },
+  "custom/nctr":{
+    "exec":"swaync-client -c",
+    "interval":1,
+    "format":" {}",
+    "on-click":"swaync-client -t",
+    "tooltip-format":"You have {} notifications"
+  }
+}
